@@ -5,19 +5,48 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <script defer src="script.js"></script>
+        <title>What Type of Cloud Are You?</title>
     </head>
     <body>
-        <div class="title">
-            <h1>Your Quiz Title Here!</h1>
-        </div>
+        <div class="container">
+            <h1>What Type of Cloud Are You?</h1>
+            <p class="sub">Take this totally awesome amazing super quiz to find out!</p>
+        
+        <form id="quizForm">
         <div class="questions">
-            <h4>User Question #1</h4>
-            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2021-06/24/16/asset/815a5287257c/anigif_sub-buzz-4360-1624553394-78_preview.gif?output-quality=auto&output-format=auto&downsize=360:*">
-            <h4>User Question #2</h4>
-            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-11/19/17/asset/buzzfeed-prod-web-05/anigif_sub-buzz-18467-1542667455-1.gif">
+            <h4>Do you find yourself high in the sky or low to the ground?</h4>
+            <label><input type="radio" name="q1" value="">High in the sky 😎</label>
+            <label><input type="radio" name="q1" value="">Low to the ground 🫠</label>
+            <label><input type="radio" name="q1" value="">Somewhere in the middle 😑</label>
         </div>
-        <div class="result">
-            This is where the user will see their quiz result.
+
+        <div class="questions">
+            <h4>What is your favorite season?</h4>
+            <label><input type="radio" name="q2" value="">Spring</label>
+            <label><input type="radio" name="q2" value="">Summer</label>
+            <label><input type="radio" name="q2" value="">Fall</label>
+            <label><input type="radio" name="q2" value="">Winter</label>
+        </div>
+
+        <div class="questions">
+            <h4>Which is the closet description to yourself?</h4>
+            <label><input type="radio" name="q3" value="">Prim and perfect, the ideal.</label>
+            <label><input type="radio" name="q3" value="">Soft, </label>
+            <label><input type="radio" name="q3" value="">Fall</label>
+            <label><input type="radio" name="q3" value="">Winter</label>
+        </div>
+
+        <div class="questions">
+            <h4>Last question...are you globular?</h4>
+            <label><input type="radio" name="q4" value="">Yes</label>
+            <label><input type="radio" name="q4" value="">No</label>
+            <label><input type="radio" name="q4" value="">Only on Tuesdays...</label>
+        </div>
+
+        <button type="submit">Submit!</button>
+        </form>
+
+        <div id="result"></div>
         </div>
     </body>
 </html>
