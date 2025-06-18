@@ -1,7 +1,7 @@
 // JavaScript goes here.
 
 document.getElementById("form1").onsubmit=function() {
-let resultImage = document.getElementById("result-image");  
+ 
   
       height = parseInt(document.querySelector('input[name = "q1"]:checked').value);
   
@@ -16,11 +16,12 @@ let resultImage = document.getElementById("result-image");
   
   
        //document.getElementById("answer").innerHTML = total;
-  let imagePath = "";
+ 
 
        if(total <= 20) {
+  document.querySelector(".imgcumu").style.display = "block";
   document.getElementById("answer2").innerHTML = "Congradulations! You are a cumulus cloud.";
-  imagePath = "https://th.bing.com/th/id/R.fb6863fa895d6252ad632bc12f306ecc?rik=16l5Iry9z1%2b%2fOA&riu=http%3a%2f%2fstockarch.com%2ffiles%2f17%2f08%2ffluffy_clouds.jpg&ehk=46eltkn%2fFThGgPNwfymKvG4vdowZCTtx1QAMmSU1oSA%3d&risl=&pid=ImgRaw&r=0";
+  
   }
   
      else if(total <= 40) {
@@ -39,7 +40,6 @@ let resultImage = document.getElementById("result-image");
  document.getElementById("answer2").innerHTML = "Congradulations! You are an alto cloud.";
   }
 
-  resultImage.src = imagePath;
 
   
        return false; // required to not refresh the page; just leave this here
