@@ -12,30 +12,38 @@
   <div id="header"><h1>If You Were a Cloud, Which Cloud Would You Be?</h1></div>
   
   <form  id="form1">
-  <p>Are you short or tall?</p>
-  <label><input type="radio" name="q1" id="short" value="1" />I am short.</label>
-  <label><input type="radio" name="q1" id="tall" value="2" />I am tall.</label>
-  <label><input type="radio" name="q1" id="mid" value="3" />I am a mediumly-heighted individual.</label>
+  <div>
+  <h4>Are you short or tall?</h4>
+  <label><input type="radio" name="q1" id="short" value="5" />I am short.</label>
+  <label><input type="radio" name="q1" id="tall" value="10" />I am tall.</label>
+  <label><input type="radio" name="q1" id="mid" value="25" />I am a mediumly-heighted individual.</label>
+  </div>
   
-  <p>What is the closest description of yourself?</p>
-  <label><input type="radio" name="q2" id="cumu" value="1" />Yields a bright, uplifting presence wherever they go—floating effortlessly through life with warmth, energy, and a hint of whimsical unpredictability</label>
-  <label><input type="radio" name="q2" id="strat" value="2" />Carries a quiet, steady presence—gentle and introspective, wrapping the world in a calm, contemplative atmosphere like a soft, endless sky</label>
-  <label><input type="radio"  name="q2" id="cirr" value="3" />Delicate yet dynamic—drifting high above with graceful wisdom, always offering a glimpse of brilliance even in the coldest moments</label>
-  <label><input type="radio"  name="q2" id="nim" value="3" />Carries intense energy—powerful and passionate, they bring the storm when needed but always leave the world refreshed and renewed</label>
-  <label><input type="radio" name="q2" id="alt" value="1" />Balanced and adaptable—hovering between extremes, they bring quiet strength and perspective, shifting seamlessly through life's ever-changing skies</label>
+  <div>
+  <h4>What is the closest description of yourself?</h4>
+  <class="question2"></class>
+  <label><input type="radio" name="q2" id="cumu" value="5" />Yields a bright, uplifting presence wherever they go—floating effortlessly through life with warmth, energy, and a hint of whimsical unpredictability</label>
+  <label><input type="radio" name="q2" id="strat" value="10" />Carries a quiet, steady presence—gentle and introspective, wrapping the world in a calm, contemplative atmosphere like a soft, endless sky</label>
+  <label><input type="radio"  name="q2" id="cirr" value="20" />Delicate yet dynamic—drifting high above with graceful wisdom, always offering a glimpse of brilliance even in the coldest moments</label>
+  <label><input type="radio"  name="q2" id="nim" value="30" />Carries intense energy—powerful and passionate, they bring the storm when needed but always leave the world refreshed and renewed</label>
+  <label><input type="radio" name="q2" id="alt" value="25" />Balanced and adaptable—hovering between extremes, they bring quiet strength and perspective, shifting seamlessly through life's ever-changing skies</label>
+  </div>
+  </class>
+  
+  <div>
+  <h4>Choose something.</h4>
+  <label><input type="radio" name="q3" id="alt1" value="25" />Hemoglobin</label>
+  <label><input type="radio" name="q3" id="nim1" value="30" />A fresh new pair of sneakers</label>
+  <label><input type="radio" name="q3" id="cirr1" value="20" />Elsa from the hit 2013 movie Frozen</label>
+  <label><input type="radio" name="q3" id="strat1" value="10" />A sherpa blanket</label>
+  <label><input type="radio" name="q3" id="cumu1" value="5" />The movie Toy Story on a stolen USB flash drive</label>
+  </div>
 
-  
-  <p>Choose something.</p>
-  <label><input type="radio" name="q3" id="alt1" value="1" />Hemoglobin</label>
-  <label><input type="radio" name="q3" id="nim1" value="2" />A fresh new pair of sneakers</label>
-  <label><input type="radio" name="q3" id="cirr1" value="3" />Elsa from the hit 2013 movie Frozen</label>
-  <label><input type="radio" name="q3" id="start1" value="3" />A sherpa blanket</label>
-  <label><input type="radio" name="q3" id="cumu1" value="3" />The movie Toy Story on a stolen USB flash drive</label>
-  
-  <p>Are you globular?</p>
-  <label><input type="radio" name="q4" id="alt2" value="1" />Yes</label>
-  <label><input type="radio" name="q4" id="notalt" value="2" />No</label>
-  
+  <div>
+  <h4>Are you globular?</h4>
+  <label><input type="radio" name="q4" id="alt2" value="25" />Yes</label>
+  <label><input type="radio" name="q4" id="notalt" value="5" />No</label>
+  </div>
   
   <button type="submit" value="Submit">Submit</button>
   
@@ -43,6 +51,7 @@
   
   <p id="answer"></p>
   <p id="answer2"></p>
+  <img id="result-image" style="display:none;" alt="Photo of result Cloud">
   </div>
 
   
