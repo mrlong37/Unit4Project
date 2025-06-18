@@ -1,52 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>INT: Unit 4 Quiz Project</title>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-        <script defer src="script.js"></script>
-        <title>What Type of Cloud Are You?</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>What Type of Cloud Are You?</h1>
-            <p class="sub">Take this totally awesome amazing super quiz to find out!</p>
-        
-        <form id="quizForm">
-        <div class="questions">
-            <h4>Do you find yourself high in the sky or low to the ground?</h4>
-            <label><input type="radio" name="q1" value="">High in the sky 😎</label>
-            <label><input type="radio" name="q1" value="">Low to the ground 🫠</label>
-            <label><input type="radio" name="q1" value="">Somewhere in the middle 😑</label>
-        </div>
+  <html>
+  <head>
+  <title>Cloud Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js"></script>
 
-        <div class="questions">
-            <h4>What is your favorite season?</h4>
-            <label><input type="radio" name="q2" value="">Spring</label>
-            <label><input type="radio" name="q2" value="">Summer</label>
-            <label><input type="radio" name="q2" value="">Fall</label>
-            <label><input type="radio" name="q2" value="">Winter</label>
-        </div>
+  </head>
+  <body>
+  <div id="main">
+  <div id="header"><h1>If You Were a Cloud, Which Cloud Would You Be?</h1></div>
+  
+  <form  id="form1">
+  <p>Are you short or tall?</p>
+  <label><input type="radio" name="q1" id="short" value="1" />I am short.</label>
+  <label><input type="radio" name="q1" id="tall" value="2" />I am tall.</label>
+  <label><input type="radio" name="q1" id="mid" value="3" />I am a mediumly-heighted individual.</label>
+  
+  <p>What is the closest description of yourself?</p>
+  <label><input type="radio" name="q2" id="cumu" value="1" />Yields a bright, uplifting presence wherever they go—floating effortlessly through life with warmth, energy, and a hint of whimsical unpredictability</label>
+  <label><input type="radio" name="q2" id="strat" value="2" />Carries a quiet, steady presence—gentle and introspective, wrapping the world in a calm, contemplative atmosphere like a soft, endless sky</label>
+  <label><input type="radio"  name="q2" id="cirr" value="3" />Delicate yet dynamic—drifting high above with graceful wisdom, always offering a glimpse of brilliance even in the coldest moments</label>
+  <label><input type="radio"  name="q2" id="nim" value="3" />Carries intense energy—powerful and passionate, they bring the storm when needed but always leave the world refreshed and renewed</label>
+  <label><input type="radio" name="q2" id="alt" value="1" />Balanced and adaptable—hovering between extremes, they bring quiet strength and perspective, shifting seamlessly through life's ever-changing skies</label>
 
-        <div class="questions">
-            <h4>Which is the closet description to yourself?</h4>
-            <label><input type="radio" name="q3" value="">Prim and perfect, the ideal.</label>
-            <label><input type="radio" name="q3" value="">Soft, </label>
-            <label><input type="radio" name="q3" value="">Fall</label>
-            <label><input type="radio" name="q3" value="">Winter</label>
-        </div>
+  
+  <p>Choose something.</p>
+  <label><input type="radio" name="q3" id="alt1" value="1" />Hemoglobin</label>
+  <label><input type="radio" name="q3" id="nim1" value="2" />A fresh new pair of sneakers</label>
+  <label><input type="radio" name="q3" id="cirr1" value="3" />Elsa from the hit 2013 movie Frozen</label>
+  <label><input type="radio" name="q3" id="start1" value="3" />A sherpa blanket</label>
+  <label><input type="radio" name="q3" id="cumu1" value="3" />The movie Toy Story on a stolen USB flash drive</label>
+  
+  <p>Are you globular?</p>
+  <label><input type="radio" name="q4" id="alt2" value="1" />Yes</label>
+  <label><input type="radio" name="q4" id="notalt" value="2" />No</label>
+  
+  
+  <button type="submit" value="Submit">Submit</button>
+  
+  </form>
+  
+  <p id="answer"></p>
+  <p id="answer2"></p>
+  </div>
 
-        <div class="questions">
-            <h4>Last question...are you globular?</h4>
-            <label><input type="radio" name="q4" value="">Yes</label>
-            <label><input type="radio" name="q4" value="">No</label>
-            <label><input type="radio" name="q4" value="">Only on Tuesdays...</label>
-        </div>
-
-        <button type="submit">Submit!</button>
-        </form>
-
-        <div id="result"></div>
-        </div>
-    </body>
-</html>
+  
+  </body>
+  </html>
