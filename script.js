@@ -15,7 +15,7 @@ document.getElementById("form1").onsubmit=function() {
       
   
   
-       //document.getElementById("answer").innerHTML = total;
+       
  
 
        if(total <= 20) {
@@ -25,19 +25,23 @@ document.getElementById("form1").onsubmit=function() {
   }
   
      else if(total <= 40) {
+  document.querySelector(".imgstrat").style.display = "block";
   document.getElementById("answer2").innerHTML = "Congradulations! You are a stratus cloud.";
   }
   
     else if(total <= 60) {
+  document.querySelector(".imgcirr").style.display = "block";
   document.getElementById("answer2").innerHTML = "Congradulations! You are a cirrus cloud.";
   }
 
     else if(total <= 80){
- document.getElementById("answer2").innerHTML = "Congradulations! You are a nimbus cloud.";
+  document.querySelector(".imgnim").style.display = "block";
+  document.getElementById("answer2").innerHTML = "Congradulations! You are a nimbus cloud.";
   }
 
     else{
- document.getElementById("answer2").innerHTML = "Congradulations! You are an alto cloud.";
+  document.querySelector(".imgalt").style.display = "block";
+  document.getElementById("answer2").innerHTML = "Congradulations! You are an alto cloud.";
   }
 
 
