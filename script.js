@@ -20,28 +20,28 @@ document.getElementById("form1").onsubmit=function() {
 
        if(total <= 20) {
   document.querySelector(".imgcumu").style.display = "block";
-  document.getElementById("answer2").innerHTML = "Congradulations! You are a cumulus cloud.";
+  document.getElementById("answer2").innerHTML = "Congratulations! You are a cumulus cloud.";
   
   }
   
      else if(total <= 40) {
   document.querySelector(".imgstrat").style.display = "block";
-  document.getElementById("answer2").innerHTML = "Congradulations! You are a stratus cloud.";
+  document.getElementById("answer2").innerHTML = "Congratulations! You are a stratus cloud.";
   }
   
     else if(total <= 60) {
   document.querySelector(".imgcirr").style.display = "block";
-  document.getElementById("answer2").innerHTML = "Congradulations! You are a cirrus cloud.";
+  document.getElementById("answer2").innerHTML = "Congratulations! You are a cirrus cloud.";
   }
 
     else if(total <= 80){
   document.querySelector(".imgnim").style.display = "block";
-  document.getElementById("answer2").innerHTML = "Congradulations! You are a nimbus cloud.";
+  document.getElementById("answer2").innerHTML = "Congratulations! You are a nimbus cloud.";
   }
 
     else{
   document.querySelector(".imgalt").style.display = "block";
-  document.getElementById("answer2").innerHTML = "Congradulations! You are an alto cloud.";
+  document.getElementById("answer2").innerHTML = "Congratulations! You are an alto cloud.";
   }
 
 
